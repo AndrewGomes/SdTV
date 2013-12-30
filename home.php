@@ -1,10 +1,4 @@
 <?php
-/**
- * AR2's home template.
- *
- * @package AR2
- * @since 1.0
- */
 ?>
 <?php get_header(); ?>
 

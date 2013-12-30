@@ -1,7 +1,4 @@
 <?php
-/*
- * Template Name: Redirect
- */
 ?>
 
 <?php if ( have_posts () ) : the_post() ?>
