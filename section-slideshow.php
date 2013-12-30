@@ -1,8 +1,4 @@
 <?php
-/**
- * The template for displaying content in 'Slideshow' post section.
- * @since 2.0
- */
 ?>
 
 <li id="post-<?php the_ID() ?>">

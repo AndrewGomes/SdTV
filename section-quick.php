@@ -1,8 +1,4 @@
 <?php
-/**
- * The template for displaying content in 'Quick Preview' post section.
- * @since 1.6
- */
 ?>
 
 <li <?php post_class() ?>>

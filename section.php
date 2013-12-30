@@ -1,7 +1,6 @@
 <?php
 /**
- * The template for displaying content in 'Traditional' post section.
- * @since 1.6
+ * The template for displaying content in 'Traditional' post section
  */
 ?>
 
@@ -37,8 +36,8 @@
 		</div>
 		<?php else : ?>
 		<div class="entry-author">
-			<?php printf( __( 'Publicado à %s', 'ar2' ), '<abbr class="published">' . ar2_posted_on( false ) . '</abbr>' ); ?>
-			<?php edit_post_link( __( 'Edit', 'ar2' ) ) ?>
+			<?php printf( __( 'Publicado a %s', 'ar2' ), '<abbr class="published">' . ar2_posted_on( false ) . '</abbr>' ); ?>
+			<?php edit_post_link( __( 'Editar', 'ar2' ) ) ?>
 		</div>
 		<?php endif ?>
 		
@@ -53,7 +52,7 @@
 	</header><!-- .entry-header -->
     
     <div class="entry-content clearfix">
-	<?php the_content( __( 'Ler o resto do Artigo', 'ar2' ) ); ?>  
+	<?php the_content( __( 'Ler artigo completo', 'ar2' ) ); ?>  
     </div>
 
 	<footer class="entry-footer clearfix">
