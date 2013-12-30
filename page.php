@@ -28,11 +28,11 @@
 					'<address class="author vcard"><a class="url fn n" href="' . get_author_posts_url( get_the_author_meta( 'ID' ) ) . '" title="' . esc_attr( get_the_author() ) . '">' . get_the_author() . '</a></address>',
 					'<abbr class="published">' . ar2_posted_on( false ) . '</abbr>'
 				); ?>
-				<?php edit_post_link( __( 'Edit', 'ar2' ) ) ?>
+				<?php edit_post_link( __( 'Editar', 'ar2' ) ) ?>
 			</div>
 			<?php else : ?>
 			<div class="entry-author">
-				<?php printf( __( 'Publicado à %s', 'ar2' ), '<abbr class="published">' . ar2_posted_on( false ) . '</abbr>' ); ?>
+				<?php printf( __( 'Publicado a %s', 'ar2' ), '<abbr class="published">' . ar2_posted_on( false ) . '</abbr>' ); ?>
 				<?php edit_post_link( __( 'Editar', 'ar2' ) ) ?>
 			</div>
 			<?php endif ?>

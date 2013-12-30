@@ -13,7 +13,7 @@
 	</aside>
 	
 	<aside id="recent-posts-static" class="widget clearfix">
-		<h3 class="widget-title"><?php _e( 'Recent Posts', 'ar2' ) ?></h3>
+		<h3 class="widget-title"><?php _e( 'Artigos Recentes', 'ar2' ) ?></h3>
 		<?php
 		
 		$r = new WP_Query( array (
@@ -39,7 +39,7 @@
 	</aside>
 	
 	<aside id="tag-cloud-static" class="widget clearfix">
-		<h3 class="widget-title"><?php _e( 'Tag Cloud', 'ar2' ) ?></h3>
+		<h3 class="widget-title"><?php _e( 'Nuvem de Etiquetas', 'ar2' ) ?></h3>
 		<div class="tags"><?php wp_tag_cloud() ?></div>
 	</aside>
 	
