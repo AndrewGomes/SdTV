@@ -3,7 +3,7 @@
 <div id="content" class="section" role="main">
 <?php ar2_above_content() ?>
 
-<h1 class="archive-title"><?php _e('Search Results', 'ar2') ?></h1>
+<h1 class="archive-title"><?php _e('Resultados da Pesquisa', 'ar2') ?></h1>
 
 <?php if ( have_posts() ) : ?>
 <?php get_search_form(); ?>
@@ -14,7 +14,7 @@
 
 <?php else: ?>
 
-<p class="no-results"><?php _e( "Sorry, we couldn't find any results based on your search query.", 'ar2' ) ?></p>
+<p class="no-results"><?php _e( "Pedimos desculpa, mas não existe nenhum artigo com a pesquisa que fez.", 'ar2' ) ?></p>
 <?php get_search_form() ?>
 
 <?php endif ?>
