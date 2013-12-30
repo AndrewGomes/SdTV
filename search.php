@@ -14,7 +14,7 @@
 
 <?php else: ?>
 
-<p class="no-results"><?php _e( "Pedimos desculpa, mas não existe nenhum artigo com a pesquisa que fez.", 'ar2' ) ?></p>
+<p class="no-results"><?php _e( "A tua pesquisa não encontrou nenhum Artigo.", 'ar2' ) ?></p>
 <?php get_search_form() ?>
 
 <?php endif ?>

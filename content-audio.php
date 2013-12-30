@@ -33,16 +33,16 @@
 		
 		<?php if ( ar2_get_theme_option( 'post_display[post_author]' ) ) : ?>
 		<div class="entry-author">
-			<?php printf( __( 'Posted by %1$s %2$s', 'ar2' ), 
+			<?php printf( __( 'Publicado por %1$s %2$s', 'ar2' ), 
 				'<address class="author vcard"><a rel="author" class="url fn n" href="' . get_author_posts_url( get_the_author_meta( 'ID' ) ) . '" title="' . esc_attr( get_the_author() ) . '">' . get_the_author() . '</a></address>',
 				'<abbr class="published">' . ar2_posted_on( false ) . '</abbr>'
 			); ?>
-			<?php edit_post_link( __( 'Edit', 'ar2' ) ) ?>
+			<?php edit_post_link( __( 'Editar', 'ar2' ) ) ?>
 		</div>
 		<?php else : ?>
 		<div class="entry-author">
-			<?php printf( __( 'Posted %s', 'ar2' ), '<abbr class="published">' . ar2_posted_on( false ) . '</abbr>' ); ?>
-			<?php edit_post_link( __( 'Edit', 'ar2' ) ) ?>
+			<?php printf( __( 'Publicado a %s', 'ar2' ), '<abbr class="published">' . ar2_posted_on( false ) . '</abbr>' ); ?>
+			<?php edit_post_link( __( 'Editar', 'ar2' ) ) ?>
 		</div>
 		<?php endif ?>
 		
@@ -69,7 +69,7 @@
 	
 		<?php if ( ar2_get_theme_option( 'post_display[post_tags]' ) && is_array( get_the_tags() ) ) : ?>
 			<div class="entry-tags tags">
-				<?php the_tags( '<strong>' . __( 'Tags: ', 'ar2' ) . '</strong>', ' ' ) ?>
+				<?php the_tags( '<strong>' . __( 'Etiquetas: ', 'ar2' ) . '</strong>', ' ' ) ?>
 			</div>
 		<?php endif ?>
 
@@ -79,7 +79,7 @@
 			<div class="about-author clearfix">
 				<a class="author-avatar" href="<?php get_author_posts_url( $id ) ?>"><?php echo get_avatar( $id, 64 ) ?></a>
 				<div class="author-meta">
-					<h4><?php printf( __( 'About %s', 'ar2' ), get_the_author_meta( 'display_name' ) ) ?></h4>
+					<h4><?php printf( __( 'Sobre %s', 'ar2' ), get_the_author_meta( 'display_name' ) ) ?></h4>
 					<?php 
 					if ( the_author_meta( 'description' ) == '' )
 						_e( 'No information is provided by the author.', 'ar2' );
