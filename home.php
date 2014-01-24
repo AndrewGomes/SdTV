@@ -1,4 +1,10 @@
 <?php
+/**
+ * AR2's home template.
+ *
+ * @package AR2
+ * @since 1.1
+ */
 ?>
 <?php get_header(); ?>
 
@@ -27,23 +33,13 @@
 
 <?php else: ?>
 
-<h1 class="archive-title"><?php _e( 'Blog Archives', 'ar2' ) ?></h1>
-<div id="archive-posts">
 <?php
-$section = new AR2_PostViews_Section( null, 'archive-posts', null, array (
-	
-	'type'				=> ar2_get_theme_option( 'archive_display' ),
-	'title'				=> null,
-	'use_query_posts'	=> true,
-	'count'				=> get_option( 'posts_per_page' ),
-	'enabled'			=> true,
-	'persistent'		=> false,
-	
-) );
-ar2_render_section( $section );
-
+// Retrieve latest news section and render the remaining.
+$news_section = $ar2_postviews->get_section( 'news-posts' );
+$news_section->settings[ 'title' ] = __( 'Blog Archives', 'ar2' );
+$news_section->settings[ 'type' ] = ar2_get_theme_option( 'archive_display' );
+$news_section->render();
 ?>
-</div><!-- #archive-posts -->
 
 <?php endif; ?>
 
