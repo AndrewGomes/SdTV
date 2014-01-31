@@ -1,10 +1,4 @@
 <?php
-/**
- * AR2's comments template.
- *
- * @package AR2
- * @since 1.0
- */
 ?>
 
 <?php if ( post_password_required() ) : ?>

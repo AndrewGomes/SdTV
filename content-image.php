@@ -1,8 +1,4 @@
 <?php
-/**
- * Template for displaying 'image' post format.
- * @since 2.0
- */
 ?>
 
 <article id="post-<?php the_ID() ?>" <?php post_class() ?>>

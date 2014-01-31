@@ -1,7 +1,4 @@
 <?php
-/*
- * Template Name: Blog Archives
- */
 ?>
 
 <?php get_header(); ?>
