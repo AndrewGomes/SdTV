@@ -1,10 +1,4 @@
 <?php
-/**
- * AR2's main header template.
- *
- * @package AR2
- * @since 1.0
- */
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes() ?>>
@@ -22,11 +16,13 @@
 <title><?php ar2_document_title() ?></title>
 
 <meta property='og:url' content='http://www.seriesdatv.pt/'/>
+<meta property="og:type" content="website"/>
 <link rel="canonical" href="http://www.seriesdatv.pt/" />
+<meta property="og:site_name" content="Séries da TV"/>
 <link rel="shortcut icon" href="favicon.ico" />
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ) ?>" />
-<meta name="keywords" content="series, series da tv, sdtv, spoiler, cancelada, renovada, estreia, novidade, notícia, televisão, tv, rtp, sic, tvi, audiências"/>
+<meta name="keywords" content="series, series da tv, SdTV, tv, cinema, televisao, sdtv, spoiler, cancelada, renovada, estreia, novidade, noticia, tv, rtp, sic, tvi, audiencias"/>
 
 <?php
 wp_enqueue_script( 'modernizr', get_template_directory_uri() . '/js/modernizr.custom.min.js', null, '2012-07-08' );
